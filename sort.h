@@ -28,9 +28,9 @@ void quick_sort(int *array, size_t size);
 void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
 void merge_sort(int *array, size_t size);
-int lomuto_partition(int *array, int low, int high, size_t size);
-void quicksort_recursive(int *array, int low, int high, size_t size);
 /*Other functions*/
-
+void swap_ints(int *a, int *b);
+int lomuto_partition(int *array, size_t size, int left, int right);
+void lomuto_sort(int *array, size_t size, int left, int right);
 
 #endif
